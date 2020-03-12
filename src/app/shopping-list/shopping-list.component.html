@@ -1,1 +1,12 @@
-<p>shopping-list works!</p>
+<div class="row">
+  <div class="col-xs-10">
+    <app-shpping-edit></app-shpping-edit>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item"
+         style="cursor: pointer"
+         *ngFor="let ingr of ingredients"
+      >{{ingr.name}} ({{ingr.amount}})</a>
+    </ul>
+  </div>
+</div>
