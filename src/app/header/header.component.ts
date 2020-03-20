@@ -7,14 +7,10 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   collapsed = true;
-  @Output() emited = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  onClick(rec: string) {
-    this.emited.emit(rec);
   }
 
 }
