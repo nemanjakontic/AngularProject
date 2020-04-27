@@ -7,7 +7,8 @@ import {Subscription} from 'rxjs';
 @Component({
   selector: 'app-shpping-edit',
   templateUrl: './shpping-edit.component.html',
-  styleUrls: ['./shpping-edit.component.css']
+  styleUrls: ['./shpping-edit.component.css'],
+  exportAs: 'ngForm'
 })
 export class ShppingEditComponent implements OnInit, OnDestroy {
 
