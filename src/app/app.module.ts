@@ -23,10 +23,7 @@ import {AuthModule} from './auth/auth.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RecipesModule,
-    ShoppingListModule,
-    SharedModule,
-    AuthModule
+    SharedModule
   ],
   // tslint:disable-next-line:max-line-length
   providers: [ShoppingListService, RecipeService, DataStorageService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
